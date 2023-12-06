@@ -93,7 +93,7 @@ class CardsAgainstHumanity:
             "Red Bull",
             "A perfect Borat impression",
             "Poor people",
-            "AIDS"
+            "AIDS",
             "The Fall of the Roman Empire",
             "Watergate",
             "Waterboarding at Guantánamo Bay",
