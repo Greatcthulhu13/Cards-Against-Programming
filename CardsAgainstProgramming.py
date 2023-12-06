@@ -36,7 +36,7 @@ class CardsAgainstHumanity:
             "What's the gift that keeps on giving?",
             "Sorry everyone, I just _____.",
             "Due to a PR fiasco, Walmart no longer offers _____.",
-            "Who's the most emo?",
+            "Who is the most emo?",
             "Studies show that lab rats navigate mazes 50% faster after being exposed to _____.",
             "During Picasso's often-overlooked Brown Period, he produced hundreds of paintings of _____.",
             "What's the new fad diet?",
@@ -50,7 +50,7 @@ class CardsAgainstHumanity:
             "In 1,000 years, when paper money is but a distant memory, _____ will be our currency.",
             "What did I bring back from Mexico?",
             "In a world ravaged by _____, our only solace is _____.",
-            "Who stole the cookies from the cookie jar?",
+            "Who stole the cookies from the cookie jar?"
             
             # Add more black cards as needed
         ]
@@ -109,6 +109,13 @@ class CardsAgainstHumanity:
             "Mommy",
             "Daddy",
             "Peter Griffin",
+            "AXE Body Spray",
+            "Judge Judy",
+            "Stranger danger",
+            "The Blood of Christ",
+            "A Bop It",
+            "Horrifying laser hair removal accident",
+            
             # Add more white cards as needed
         ]
 
