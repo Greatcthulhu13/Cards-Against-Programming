@@ -26,13 +26,13 @@ class CardsAgainstHumanity:
 
     def play_round(self):
         black_card = self.draw_black_card()
-        print(f"Black Card: {black_card}")
+        print(f"Black Card: {black_card}") #change to allow player to select winner, loop through each players
 
         num_players = int(input("Enter the number of players: "))
         player_responses = {}
 
         for player in range(1, num_players + 1):
-            white_cards = self.draw_white_cards(2)  # Each player gets 2 white cards
+            white_cards = self.draw_white_cards(7)  # Each player gets 2 white cards
             print(f"\nPlayer {player}'s White Cards: {white_cards}")
 
             chosen_card = input(f"Select a card for Player {player}: ")
