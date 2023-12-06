@@ -65,3 +65,4 @@ if __name__ == "__main__":
         if play_again != "yes":
             print("Thanks for playing!")
             break
+#If wanted, can change so black card is displayed with the winning white card
