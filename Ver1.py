@@ -43,7 +43,7 @@ class CardsAgainstHumanity:
         player_responses = {}
 
         for player in range(1, num_players + 1):
-            white_cards = self.draw_white_cards(2)  # Each player gets 2 white cards
+            white_cards = self.draw_white_cards(7)  # Each player gets 7 white cards
             print(f"\nPlayer {player}'s White Cards: {white_cards}")
 
             chosen_card = input(f"Select a card for Player {player}: ")
@@ -53,7 +53,7 @@ class CardsAgainstHumanity:
         for player, response in player_responses.items():
             print(f"Player {player}: {response}")
 
-        winner = random.choice(list(player_responses.keys()))
+        winner = random.choice(list(player_responses.keys())) #Change to allow a player to select winner, loop through all players
         print(f"\nPlayer {winner} wins this round!\n")
 
 if __name__ == "__main__":
