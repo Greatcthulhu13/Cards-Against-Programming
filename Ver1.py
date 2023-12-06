@@ -6,6 +6,11 @@ class CardsAgainstHumanity:
             "I never truly understood ___ until I encountered ___.",
             "What's that smell?",
             "In an attempt to reach a wider audience, the Smithsonian Museum of Natural History has opened an interactive exhibit on ___.",
+            "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated _____.",
+            "_____ is a slippery slope that leads to _____.",
+            "In M. Night Shyamalan's new movie, Bruce Willis discovers that _____ had really been _____ all along.",
+            "What ended my last relationship?", 
+            "What gets better with age?",
             # Add more black cards as needed
         ]
         self.white_cards = [
@@ -15,6 +20,10 @@ class CardsAgainstHumanity:
             "Famine",
             "Nicolas Cage",
             "Not caring about the third world",
+            "Bannananana",
+            "Object permanence",
+            "A moment of silence",
+            "What gets better with age?"
             # Add more white cards as needed
         ]
 
