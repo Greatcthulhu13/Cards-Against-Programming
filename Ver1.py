@@ -23,7 +23,9 @@ class CardsAgainstHumanity:
             "Bannananana",
             "Object permanence",
             "A moment of silence",
-            "What gets better with age?"
+            "What gets better with age?",
+            "My Family",
+            "Cucumber",
             # Add more white cards as needed
         ]
 
