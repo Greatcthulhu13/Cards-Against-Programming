@@ -9,11 +9,12 @@ class CardsAgainstHumanity:
             # Add more black cards as needed
         ]
         self.white_cards = [
-            "Puppies",
-            "Sunshine",
-            "Rainbows",
-            "Cuddling",
-            "A kitten video",
+            "Your mother",
+            "Friendly Fire",
+            "Ronald Reagan",
+            "Famine",
+            "Nicolas Cage",
+            "Not caring about the third world",
             # Add more white cards as needed
         ]
 
