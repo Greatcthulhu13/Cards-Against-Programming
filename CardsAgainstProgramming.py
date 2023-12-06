@@ -46,11 +46,12 @@ class CardsAgainstHumanity:
             "In 1,000 years, when paper money is but a distant memory, _____ will be our currency.",
             "Why am I sticky?",
             "What do old people smell like?",
+            "What will that one friend be arrested for?",
+            "In 1,000 years, when paper money is but a distant memory, _____ will be our currency.",
+            "What did I bring back from Mexico?",
+            "In a world ravaged by _____, our only solace is _____.",
+            "Who stole the cookies from the cookie jar?",
             
-
-
-
-
             # Add more black cards as needed
         ]
         self.white_cards = [
@@ -93,7 +94,15 @@ class CardsAgainstHumanity:
             "A perfect Borat impression",
             "Poor people",
             "AIDS"
-
+            "The Fall of the Roman Empire",
+            "Watergate",
+            "Waterboarding at Guantánamo Bay",
+            "Pretending to care",
+            "Hot people",
+            "American Gladiators",
+            "Public ridicule",
+            "George Bush",
+            
             # Add more white cards as needed
         ]
 
