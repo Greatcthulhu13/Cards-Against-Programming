@@ -102,7 +102,13 @@ class CardsAgainstHumanity:
             "American Gladiators",
             "Public ridicule",
             "George Bush",
-            
+            "Aubergine",
+            "Gerbil",
+            "Rabbits foot",
+            "Grandma",
+            "Mommy",
+            "Daddy",
+            "Peter Griffin",
             # Add more white cards as needed
         ]
 
