@@ -88,7 +88,7 @@ class CardsAgainstHumanity:
             "The Trail of Tears",
             "Derek Baum",
             "Exsistential Dread",
-            "Exsistential Crisis",
+            "An Exsistential Crisis",
             "Smaug",
             "Red Bull",
             "A perfect Borat impression",
@@ -115,6 +115,7 @@ class CardsAgainstHumanity:
             "The Blood of Christ",
             "A Bop It",
             "Horrifying laser hair removal accident",
+            "Charlie's Terraria addiction"
             
             # Add more white cards as needed
         ]
