@@ -41,7 +41,6 @@ class CardsAgainstHumanity:
             "During Picasso's often-overlooked Brown Period, he produced hundreds of paintings of _____.",
             "What's the new fad diet?",
             "Maybe she's born with it. Maybe it's _____.",
-            "During sex, I like to think about _____.",
             "What's there a ton of in heaven?",
             "In 1,000 years, when paper money is but a distant memory, _____ will be our currency.",
             "Why am I sticky?",
