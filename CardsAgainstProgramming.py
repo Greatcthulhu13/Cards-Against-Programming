@@ -50,7 +50,7 @@ class CardsAgainstHumanity:
             "In 1,000 years, when paper money is but a distant memory, _____ will be our currency.",
             "What did I bring back from Mexico?",
             "In a world ravaged by _____, our only solace is _____.",
-            "Who stole the cookies from the cookie jar?"
+            "Who stole the cookies from the cookie jar?",
             
             # Add more black cards as needed
         ]
