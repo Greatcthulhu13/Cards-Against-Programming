@@ -50,6 +50,8 @@ class CardsAgainstHumanity:
             "What did I bring back from Mexico?",
             "In a world ravaged by _____, our only solace is _____.",
             "Who stole the cookies from the cookie jar?",
+            "What is George Bush thinking about?"
+            "What is the meaning of life?",
             
             # Add more black cards as needed
         ]
@@ -63,7 +65,6 @@ class CardsAgainstHumanity:
             "Bannananana",
             "Object permanence",
             "A moment of silence",
-            "What gets better with age?",
             "My Family",
             "Cucumber",
             "Robert J. Oppenheimer",
@@ -114,7 +115,9 @@ class CardsAgainstHumanity:
             "The Blood of Christ",
             "A Bop It",
             "Horrifying laser hair removal accident",
-            "Charlie's Terraria addiction"
+            "Charlie's Terraria addiction",
+            "Lip biting",
+            "Making car noises while pushing the shopping trolley around",
             
             # Add more white cards as needed
         ]
