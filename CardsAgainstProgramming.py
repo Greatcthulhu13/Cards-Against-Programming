@@ -149,6 +149,29 @@ class CardsAgainstHumanity:
         winner = random.choice(list(player_responses.keys())) #Change to allow a player to select winner, loop through all players
         print(f"\nPlayer {winner} wins this round!\n")
 
+        ###############################
+        #START of Possible voting system
+        import pyrankvote
+        from pyrankvote import Candidate, Ballot
+        
+        player1 = Candidate("PLayer 1")
+        player2 = Candidate("PLayer 2")
+        player3 = Candidate("Player 3")
+        player4 = Candidate("Player 4")
+        
+        Candidates = [player1, player2, player3, player4]
+
+        ballots = [
+            Ballot(ranked_candidates=[player1, player2, player3, player4])
+        
+        election_result = pyrankvote.instant_runoff_voting(candidate, ballots)
+        
+        winner = election_result.get_winners()(list(player_responses.keys()))
+        
+        print(election_result)
+        #END of Possible voting system
+        ##############################
+
 if __name__ == "__main__":
     game = CardsAgainstHumanity()
 
