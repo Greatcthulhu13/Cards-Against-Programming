@@ -21,14 +21,13 @@ class CardsAgainstHumanity:
             "What would grandma find disturbing, yet oddly charming?",
             "What never fails to liven up the party?",
             "What is the meaning of life?",
-            "______ is why your dad left",
+            "______. Is why your dad left",
             "Lifetime presents _____, the story of _____.",
             "And I would have gotten away with it, too, if it hadn't been for _____.",
             "What's a girl's best friend?",
             "Major League Baseball has banned _____ for giving players an unfair advantage.",
             "And the Academy Award for _____ goes to _____.",
             "BILLY MAYS HERE FOR _____!",
-            "What's that smell?",
             "Rumor has it that Vladimir Putin's favorite dish is _____ stuffed with _____.",
             "Coming to Broadway this season, _____: The Musical",
             "Science will never explain the origin of _____.!",
@@ -54,6 +53,12 @@ class CardsAgainstHumanity:
             "Thank god for _____",
             "If I had a time machine, I would change _____",
             "If I had a penny everytime someone said ______. I'd have one penny.",
+            "In 2024 the Pope announced the Bible 2, featuring ______",
+            "What was the cause of my divorce?",
+            "The new Star Wars film will feature a cameo from ______",
+            "What did I get in my Christmas stocking?",
+            "What did I get for Christmas?",
+            "What did I get for my Birthday?",
 
             # Add more black cards as needed
         ]
@@ -129,6 +134,7 @@ class CardsAgainstHumanity:
             "Josh Hutcherson",
             "Slovakia",
             "Women",
+            "Weezer",
             
             # Add more white cards as needed
         ]
