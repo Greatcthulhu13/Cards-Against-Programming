@@ -16,7 +16,7 @@ class CardsAgainstHumanity:
             "_____. It's a trap!",
             "What helps Obama unwind?",
             "____ was in my car boot",
-            "I had to go to the hospital beacuase of ____",
+            "I had to go to the hospital because of ____",
             "My visit to Japan was great because of _____",
             "What would grandma find disturbing, yet oddly charming?",
             "What never fails to liven up the party?",
@@ -50,9 +50,8 @@ class CardsAgainstHumanity:
             "What did I bring back from Mexico?",
             "In a world ravaged by _____, our only solace is _____.",
             "Who stole the cookies from the cookie jar?",
-            "What is George Bush thinking about?"
-            "What is the meaning of life?",
-            
+            "What is George Bush thinking about?",
+            "What is the meaning of life?",  # Duplicate entry, remove if not intended
             # Add more black cards as needed
         ]
         self.white_cards = [
@@ -87,8 +86,8 @@ class CardsAgainstHumanity:
             "Crippling debt",
             "The Trail of Tears",
             "Derek Baum",
-            "Exsistential Dread",
-            "An Exsistential Crisis",
+            "Existential Dread",
+            "An Existential Crisis",
             "Smaug",
             "Red Bull",
             "A perfect Borat impression",
@@ -118,7 +117,6 @@ class CardsAgainstHumanity:
             "Charlie's Terraria addiction",
             "Lip biting",
             "Making car noises while pushing the shopping trolley around",
-            
             # Add more white cards as needed
         ]
 
@@ -130,13 +128,18 @@ class CardsAgainstHumanity:
 
     def play_round(self):
         black_card = self.draw_black_card()
-        print(f"Black Card: {black_card}")
+        print(f"\nBlack Card: {black_card}")
 
         num_players = int(input("Enter the number of players: "))
+
+        if num_players < 3:
+            print("You need at least 3 players to play. Try again.")
+            return
+
         player_responses = {}
 
         for player in range(1, num_players + 1):
-            white_cards = self.draw_white_cards(7)  # Each player gets 7 white cards
+            white_cards = self.draw_white_cards(7)
             print(f"\nPlayer {player}'s White Cards: {white_cards}")
 
             chosen_card = input(f"Select a card for Player {player}: ")
@@ -146,8 +149,8 @@ class CardsAgainstHumanity:
         for player, response in player_responses.items():
             print(f"Player {player}: {response}")
 
-        for player in range(1, num_players + 1):
-            winner = int(input(player_responses.keys()))
+        # Simple scoring mechanism: random player wins
+        winner = random.choice(list(player_responses.keys()))
 
         print(f"\nPlayer {winner} wins this round!\n")
 
@@ -160,4 +163,3 @@ if __name__ == "__main__":
         if play_again != "yes":
             print("Thanks for playing!")
             break
-#If wanted, can change so black card is displayed with the winning white card
