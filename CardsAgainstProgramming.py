@@ -51,7 +51,10 @@ class CardsAgainstHumanity:
             "In a world ravaged by _____, our only solace is _____.",
             "Who stole the cookies from the cookie jar?",
             "What is George Bush thinking about?",
-            "What is the meaning of life?",  # Duplicate entry, remove if not intended
+            "Thank god for _____",
+            "If I had a time machine, I would change _____",
+            "If I had a penny everytime someone said ______. I'd have one penny.",
+
             # Add more black cards as needed
         ]
         self.white_cards = [
@@ -117,6 +120,15 @@ class CardsAgainstHumanity:
             "Charlie's Terraria addiction",
             "Lip biting",
             "Making car noises while pushing the shopping trolley around",
+            "New Age music",
+            "Commiting a hit and run",
+            "Drinking printer ink",
+            "Paint thinner",
+            "Retinas",
+            "Duran Duran",
+            "Josh Hutcherson",
+            "Slovakia",
+            
             # Add more white cards as needed
         ]
 
