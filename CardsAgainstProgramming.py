@@ -128,6 +128,7 @@ class CardsAgainstHumanity:
             "Duran Duran",
             "Josh Hutcherson",
             "Slovakia",
+            "Women",
             
             # Add more white cards as needed
         ]
