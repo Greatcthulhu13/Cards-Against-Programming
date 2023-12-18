@@ -59,6 +59,10 @@ class CardsAgainstHumanity:
             "What did I get in my Christmas stocking?",
             "What did I get for Christmas?",
             "What did I get for my Birthday?",
+            "The train is now departing for ______",
+            "What is the latest trend?",
+            "What did I order from China?",
+            "World War 2 started because of ______",
 
             # Add more black cards as needed
         ]
