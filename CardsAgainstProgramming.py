@@ -159,6 +159,14 @@ class CardsAgainstHumanity:
             "Slovakia",
             "Women",
             "Weezer",
+            "Firefox",
+            "Battling goblins",
+            "William Henry Gates III",
+            "A quick getaway",
+            "GTA 7",
+            "A poorly made cup of tea",
+            "The fabric of reality",
+            "Wheese Cheels",
             
             # Add more white cards as needed
         ]
