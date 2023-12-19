@@ -2,6 +2,10 @@ import random
 
 class CardsAgainstHumanity:
     def __init__(self):
+        self.max_hand_size = 7  # Number of white cards each player draws
+        self.min_players = 3   # Minimum number of players required
+        self.max_rounds = 5    # Maximum number of rounds for the game
+
         self.black_cards = [
             "I never truly understood ___ until I encountered ___.",
             "What's that smell?",
@@ -83,8 +87,7 @@ class CardsAgainstHumanity:
             "The cause of the end of the world will be _______",
             "The most common password has been reaveled to be _______",
             "Rockstar Games presents their latest triple A game ________",
-
-            # Add more black cards as needed
+            # ... (unchanged)
         ]
         self.white_cards = [
             "Your mother",
@@ -167,8 +170,8 @@ class CardsAgainstHumanity:
             "A poorly made cup of tea",
             "The fabric of reality",
             "Wheese Cheels",
-            
-            # Add more white cards as needed
+
+            # ... (unchanged)
         ]
 
     def draw_black_card(self):
@@ -181,19 +184,15 @@ class CardsAgainstHumanity:
         black_card = self.draw_black_card()
         print(f"\nBlack Card: {black_card}")
 
-        num_players = int(input("Enter the number of players: "))
-
-        if num_players < 3:
-            print("You need at least 3 players to play. Try again.")
-            return
+        num_players = self.get_valid_player_count()
 
         player_responses = {}
 
         for player in range(1, num_players + 1):
-            white_cards = self.draw_white_cards(7)
+            white_cards = self.draw_white_cards(self.max_hand_size)
             print(f"\nPlayer {player}'s White Cards: {white_cards}")
 
-            chosen_card = input(f"Select a card for Player {player}: ")
+            chosen_card = self.get_player_choice(player, white_cards)
             player_responses[player] = chosen_card
 
         print("\nResponses:")
@@ -205,12 +204,39 @@ class CardsAgainstHumanity:
 
         print(f"\nPlayer {winner} wins this round!\n")
 
+    def get_valid_player_count(self):
+        while True:
+            try:
+                num_players = int(input("Enter the number of players: "))
+                if num_players < self.min_players:
+                    print("You need at least 3 players to play. Try again.")
+                else:
+                    return num_players
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
+    def get_player_choice(self, player, white_cards):
+        while True:
+            try:
+                print(f"\nChoose a card for Player {player}:")
+                for i, card in enumerate(white_cards, start=1):
+                    print(f"{i}. {card}")
+                choice_index = int(input("Enter the number of your choice: "))
+                if 1 <= choice_index <= len(white_cards):
+                    return white_cards[choice_index - 1]
+                else:
+                    print("Invalid choice. Please enter a number within the given range.")
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
 if __name__ == "__main__":
     game = CardsAgainstHumanity()
 
-    while True:
+    for round_num in range(1, game.max_rounds + 1):
+        print(f"\n--- Round {round_num} ---")
         game.play_round()
-        play_again = input("Do you want to play another round? (yes/no): ").lower()
-        if play_again != "yes":
+
+        play_again = input("Do you want to play another round? (y/n): ").lower()
+        if play_again != "y":
             print("Thanks for playing!")
             break
