@@ -9,7 +9,7 @@ for xx in range(0, len(phand)):
   pcarddisplay.append("│{}{}. . .│")
   pcarddisplay.append("│. . . . .│")
   pcarddisplay.append("│. . . . .│")
-  pcarddisplay.append("│. . {}. .│")
+  pcarddisplay.append("│. . . . .│")
   pcarddisplay.append("│. . . . .│")
   pcarddisplay.append("│. . . . .│")
   pcarddisplay.append("│. . .{}{}│")
