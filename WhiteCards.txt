@@ -79,5 +79,12 @@
             "The fabric of reality",
             "Wheese Cheels",
             "The War on Drugs",
-            "Plagerism"
-            "A nice holiday at Tiananmnen Square in 1989"
+            "Plagerism",
+            "A nice holiday at Tiananmnen Square in 1989",
+            "Alcholism",
+            "A scarily accurate Lois Griffin impression",
+            "William Shatner's music career",
+            "Radiohead's performance at the MTV Beach House",
+            "Walter White",
+            "A minor spelling error",
+            "Everybody by Backstreet Boys",
