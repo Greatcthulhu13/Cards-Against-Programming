@@ -1,9 +1,9 @@
-            "I never truly understood ___ until I encountered ___.",
+            ("I never truly understood ___ until I encountered ___.", 2)
             "What's that smell?",
             "In an attempt to reach a wider audience, the Smithsonian Museum of Natural History has opened an interactive exhibit on ___.",
             "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated _____.",
-            "_____ is a slippery slope that leads to _____.",
-            "In M. Night Shyamalan's new movie, Bruce Willis discovers that _____ had really been _____ all along.",
+            ("_____ is a slippery slope that leads to _____.", 2)
+            ("In M. Night Shyamalan's new movie, Bruce Willis discovers that _____ had really been _____ all along.", 2)
             "What ended my last relationship?", 
             "What gets better with age?",
             "What gives me uncontrollable gas?",
@@ -17,13 +17,13 @@
             "What never fails to liven up the party?",
             "What is the meaning of life?",
             "______. Is why your dad left",
-            "Lifetime presents _____, the story of _____.",
+            ("ITV 3 presents _____, the story of _____.", 2)
             "And I would have gotten away with it, too, if it hadn't been for _____.",
             "What's a girl's best friend?",
             "Major League Baseball has banned _____ for giving players an unfair advantage.",
-            "And the Academy Award for _____ goes to _____.",
+            ("And the Academy Award for _____ goes to _____.", 2)
             "BILLY MAYS HERE FOR _____!",
-            "Rumor has it that Vladimir Putin's favorite dish is _____ stuffed with _____.",
+            ("Rumor has it that Vladimir Putin's favorite dish is _____ stuffed with _____.", 2)
             "Coming to Broadway this season, _____: The Musical",
             "Science will never explain the origin of _____.!",
             "Dear Abby, I'm having some trouble with _____ and would like your advice.",
@@ -42,7 +42,7 @@
             "What will that one friend be arrested for?",
             "In 1,000 years, when paper money is but a distant memory, _____ will be our currency.",
             "What did I bring back from Mexico?",
-            "In a world ravaged by _____, our only solace is _____.",
+            ("In a world ravaged by _____, our only solace is _____.", 2)
             "Who stole the cookies from the cookie jar?",
             "What is George Bush thinking about?",
             "Thank god for _____",
@@ -66,7 +66,7 @@
             "Who was the fifth Beatle?",
             "What was the cause of the traffic on the M4 this morning?",
             "What was the cause of the awkward silence?",
-            "Next on Britain's got talent, ________ performing, ________",
+            ("Next on Britain's got talent, ________ performing, ________", 2)
             "I drink to forget _____.", 
             "When I am President of the United States, I will create the Department of _____.",
             "This season on Man vs. Wild, Bear Grylls must survive in the depths of the Amazon with only _____ and his wits.",
