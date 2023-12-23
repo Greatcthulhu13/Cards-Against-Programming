@@ -37,16 +37,15 @@ class CardsAgainstHumanity:
         player_responses = {}
 
         for player in range(1, num_players + 1):
-            white_cards = self.draw_white_cards(self.max_hand_size)
+            player_hand = self.draw_white_cards(self.max_hand_size)  # Use a different variable name
 
-            chosen_cards = self.get_player_choices(player, white_cards, num_answers_required)
+            chosen_cards = self.get_player_choices(player, player_hand, num_answers_required)
             player_responses[player] = chosen_cards
 
         print("The black card was:")
         print(black_card)
         print("Responses:")
         for player, response in player_responses.items():
-            # Replaces the blank with each player's response and removes speech marks and commas
             filled_black_card = black_card.replace("___", " ".join(response))
             filled_black_card = filled_black_card.replace('"', '')
             filled_black_card = filled_black_card.replace(',', '')
@@ -69,7 +68,7 @@ class CardsAgainstHumanity:
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
 
-    def get_player_choices(self, player, white_cards, num_answers_required):
+    def get_player_choices(self, player, player_hand, num_answers_required):
         chosen_cards = []
 
         for i in range(num_answers_required):
@@ -77,11 +76,11 @@ class CardsAgainstHumanity:
 
                 try:
                     print(f"\nChoose a card for Player {player} (Pick {len(chosen_cards) + 1}):")
-                    for i, card in enumerate(white_cards, start=1):
+                    for i, card in enumerate(player_hand, start=1):
                         print(f"{i}. {card}")
                     choice_index = int(input("Enter the number of your choice: "))
-                    if 1 <= choice_index <= len(white_cards):
-                        chosen_cards.append(white_cards.pop(choice_index - 1))
+                    if 1 <= choice_index <= len(player_hand):
+                        chosen_cards.append(player_hand.pop(choice_index - 1))
                         break
                     else:
                         print("Invalid choice. Please enter a number within the given range.")
