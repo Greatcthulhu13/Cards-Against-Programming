@@ -228,7 +228,7 @@ class CardsAgainstHumanity:
             "North Korea",
             "Laughing at the name Zedong",
             "Mark David Chapman",
-            "Doing "here comes the aeroplane" on September 12th 2001",
+            "Doing here comes the aeroplane on September 12th 2001",
             "Stealing the glass from the pub",
             "A jaunty tune",
             "Dinner with Jay-Z",
