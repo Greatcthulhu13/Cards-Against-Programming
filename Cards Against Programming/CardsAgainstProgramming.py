@@ -120,6 +120,16 @@ class CardsAgainstHumanity:
             "What did they find in Prince Andrews basement?",
             "_________. A new Netflix Original",
             "And the Grammy goes to ________",
+            "And the Oscar goes to _________",
+            ("Next up on WWE: ________ vs. _______", 2),
+            "A new sport called _______, will be featured in the 2024 Olympics",
+            "If I was a muscian my stage name would be ________",
+            "If I was a singer my debut album would be called _________",
+            "Who is the next James Bond?",
+            "Who is the next Doctor, in Doctor Who?",
+            ("A _______ a day keeps the _______ away", 2),
+            "_________ is the best gift someone can give",
+            "_________ is the worst gift someone can give",
 
             # Add more as you see fit
         ]
@@ -204,7 +214,26 @@ class CardsAgainstHumanity:
             "A poorly made cup of tea",
             "The fabric of reality",
             "Wheese Cheels",
-
+            "The War on Drugs",
+            "Plagerism",
+            "A nice holiday at Tiananmnen Square in 1989",
+            "Alcholism",
+            "A scarily accurate Lois Griffin impression",
+            "William Shatner's music career",
+            "Radiohead's performance at the MTV Beach House",
+            "Walter White",
+            "A minor spelling error",
+            "Everybody by Backstreet Boys",
+            "A Yoko Ono concert",
+            "North Korea",
+            "Laughing at the name Zedong",
+            "Mark David Chapman",
+            "Doing "here comes the aeroplane" on September 12th 2001",
+            "Stealing the glass from the pub",
+            "A jaunty tune",
+            "Dinner with Jay-Z",
+            "Stalking people",
+            "An Adam Sandler movie",
             # Add more as you see fit
         ]
 
