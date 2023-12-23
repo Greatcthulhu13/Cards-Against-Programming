@@ -1,27 +1,6 @@
+import tkinter as tk
+from tkinter import messagebox
 import random
-
-phand = ["Cards Against Programming"]
-print(phand)
-
-for xx in range(0, len(phand)):
-  pcarddisplay = []
-  pcarddisplay.append("┌─────────┐")
-  pcarddisplay.append("│{}{}. . .│")
-  pcarddisplay.append("│. . . . .│")
-  pcarddisplay.append("│. . . . .│")
-  pcarddisplay.append("│. . . . .│")
-  pcarddisplay.append("│. . . . .│")
-  pcarddisplay.append("│. . . . .│")
-  pcarddisplay.append("│. . .{}{}│")
-  pcarddisplay.append("└─────────┘")
-
-  x = ("│.", phand[xx][:1], ". . . .│")
-  pcarddisplay[1] = "".join(x)
-
-  x = ("│. . . .", phand[xx][:1], ".│")
-  pcarddisplay[7] = "".join(x)
-
-  print("\n".join(pcarddisplay))
 
 class CardsAgainstHumanity:
     def __init__(self):
@@ -31,6 +10,7 @@ class CardsAgainstHumanity:
 
         self.black_cards = [
             ("I never truly understood ___ until I encountered ___.", 2),
+                        ("I never truly understood ___ until I encountered ___.", 2),
             "What's that smell?",
             "In an attempt to reach a wider audience, the Smithsonian Museum of Natural History has opened an interactive exhibit on ___.",
             "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated _____.",
@@ -130,11 +110,10 @@ class CardsAgainstHumanity:
             ("A _______ a day keeps the _______ away", 2),
             "_________ is the best gift someone can give",
             "_________ is the worst gift someone can give",
-
-            # Add more as you see fit
         ]
+
         self.white_cards = [
-            "Your mother",
+                        "Your mother",
             "Friendly Fire",
             "Ronald Reagan",
             "Famine",
@@ -234,7 +213,7 @@ class CardsAgainstHumanity:
             "Dinner with Jay-Z",
             "Stalking people",
             "An Adam Sandler movie",
-            # Add more as you see fit
+            # ... (your existing white cards)
         ]
 
     def draw_black_card(self):
@@ -251,7 +230,6 @@ class CardsAgainstHumanity:
     def play_round(self):
         black_card = self.draw_black_card()
         num_answers_required = black_card[1] if isinstance(black_card, tuple) else 1
-        print(f"\nBlack Card: {black_card}")
 
         num_players = self.get_valid_player_count()
 
@@ -263,14 +241,7 @@ class CardsAgainstHumanity:
             chosen_cards = self.get_player_choices(player, white_cards, num_answers_required)
             player_responses[player] = chosen_cards
 
-        print("\nResponses:")
-        for player, response in player_responses.items():
-            print(f"Player {player}: {response}")
-
-        # Simple scoring mechanism: random player wins
-        winner = random.choice(list(player_responses.keys()))
-
-        print(f"\nPlayer {winner} wins this round!\n")
+        return black_card, player_responses
 
     def get_valid_player_count(self):
         while True:
@@ -288,7 +259,6 @@ class CardsAgainstHumanity:
 
         for i in range(num_answers_required):
             while True:
-
                 try:
                     print(f"\nChoose a card for Player {player} (Pick {len(chosen_cards) + 1}):")
                     for i, card in enumerate(white_cards, start=1):
@@ -304,14 +274,43 @@ class CardsAgainstHumanity:
 
         return chosen_cards
 
+class CardsAgainstHumanityGUI(tk.Tk):
+    def __init__(self):
+        super().__init__()
+
+        self.title("Cards Against Humanity")
+        self.geometry("800x600")
+
+        self.game = CardsAgainstHumanity()
+        self.current_round = 1
+
+        self.create_widgets()
+
+    def create_widgets(self):
+        self.label = tk.Label(self, text=f"--- Round {self.current_round} ---", font=("Arial", 16))
+        self.label.pack(pady=10)
+
+        self.play_round_button = tk.Button(self, text="Play Round", command=self.play_round)
+        self.play_round_button.pack(pady=20)
+
+        self.quit_button = tk.Button(self, text="Quit", command=self.quit)
+        self.quit_button.pack(pady=10)
+
+    def play_round(self):
+        black_card, player_responses = self.game.play_round()
+
+        result_message = f"\nBlack Card: {black_card}\n\nResponses:\n"
+        for player, response in player_responses.items():
+            result_message += f"Player {player}: {response}\n"
+
+        winner = random.choice(list(player_responses.keys()))
+        result_message += f"\nPlayer {winner} wins this round!\n"
+
+        messagebox.showinfo("Round Results", result_message)
+
+        self.current_round += 1
+        self.label.config(text=f"--- Round {self.current_round} ---")
+
 if __name__ == "__main__":
-    game = CardsAgainstHumanity()
-
-    for round_num in range(1, game.max_rounds + 1):
-        print(f"\n--- Round {round_num} ---")
-        game.play_round()
-
-        play_again = input("Do you want to play another round? (y/n): ").lower()
-        if play_again != "y":
-            print("Thanks for playing!")
-            break
+    app = CardsAgainstHumanityGUI()
+    app.mainloop()
