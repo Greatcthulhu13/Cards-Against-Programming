@@ -18,18 +18,22 @@ class CardsAgainstHumanity:
 
     def draw_black_card(self):
         chosen_card = random.choice(black_cards)
-        if isinstance(chosen_card, tuple):
-            return chosen_card[0]
-        else:
-            black_cards.remove(chosen_card)
-            return chosen_card
+        black_cards.remove(chosen_card)
+        return chosen_card
 
     def draw_white_cards(self, num_cards):
         return random.sample(white_cards, num_cards)
 
     def play_round(self):
         black_card = self.draw_black_card()
-        num_answers_required = black_card[1] if isinstance(black_card, tuple) else 1
+        num_answers_required = black_card.count("___")  # Count underscores to determine the number of answers required
+        if num_answers_required == 0:
+            num_answers_required = 1
+            showresponse = True 
+        else:
+            showresponse = False
+        black_card = black_card.replace('"','') #Removes the speech marks in the black card bcs I'm too lazy to do it myself
+
         print(f"\nBlack Card: {black_card}")
 
         num_players = self.get_valid_player_count()
@@ -37,24 +41,32 @@ class CardsAgainstHumanity:
         player_responses = {}
 
         for player in range(1, num_players + 1):
-            player_hand = self.draw_white_cards(self.max_hand_size)  # Use a different variable name
+            player_hand = self.draw_white_cards(self.max_hand_size)
 
             chosen_cards = self.get_player_choices(player, player_hand, num_answers_required)
             player_responses[player] = chosen_cards
 
-        print("The black card was:")
+        print("\nThe black card was:")
         print(black_card)
         print("Responses:")
-        for player, response in player_responses.items():
-            filled_black_card = black_card.replace("___", " ".join(response))
-            filled_black_card = filled_black_card.replace('"', '')
-            filled_black_card = filled_black_card.replace(',', '')
-            print(f"Player{player}'s response: {filled_black_card}")
-            print("=" * 30)
+
+        for player, responses in player_responses.items():
+            filled_black_card = black_card
+            for i, response in enumerate(responses, 1):
+                # Replace the first set of underscores with the first response and the second set with the second response
+                if i == 1:
+                    filled_black_card = filled_black_card.replace("___", response, 1)
+                else:
+                    filled_black_card = filled_black_card.replace("____", response, 1)
+            if showresponse == False:
+                print(f"Player {player}'s response: {filled_black_card}")
+                print("=" * 30)
+            else:
+                print(f"Player {player}'s response: {response}")
+                print("=" * 30)
 
         # Simple scoring mechanism: random player wins
         winner = random.choice(list(player_responses.keys()))
-
         print(f"\nPlayer {winner} wins this round!\n")
 
     def get_valid_player_count(self):
@@ -73,7 +85,6 @@ class CardsAgainstHumanity:
 
         for i in range(num_answers_required):
             while True:
-
                 try:
                     print(f"\nChoose a card for Player {player} (Pick {len(chosen_cards) + 1}):")
                     for i, card in enumerate(player_hand, start=1):
