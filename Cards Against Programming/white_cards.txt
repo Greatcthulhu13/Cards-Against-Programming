@@ -1,100 +1,100 @@
-            "Your mother",
-            "Friendly Fire",
+            "Your mother"
+            "Friendly Fire"
             "Ronald Reagan",
-            "Famine",
-            "Nicolas Cage",
-            "Not caring about the third world",
-            "Bannananana",
-            "Object permanence",
-            "A moment of silence",
-            "My Family",
-            "Cucumber",
-            "Robert J. Oppenheimer",
-            "Atomic War",
-            "Explosions",
-            "An M. Night Shyamalan plot twist",
-            "Grave robbing",
-            "A time travel paradox",
-            "Half-assed foreplay",
-            "42",
-            "Blue-eyes white dragon",
-            "Pot of Greed",
-            "The Bill of Independence",
-            "Kitchen Gun",
-            "Blade staring Wesley Snipes",
-            "Big Knobs and Broomsticks",
-            "Consultants",
-            "Her Royal Highness, Queen Elizabeth II",
-            "Forgetting the Alamo",
-            "Crippling debt",
-            "The Trail of Tears",
-            "Dinner with Jeffery Dahmer",
-            "Existential Dread",
-            "An Existential Crisis",
-            "Day drinking",
-            "Red Bull",
-            "A perfect Borat impression",
-            "Poor people",
-            "AIDS",
-            "The Fall of the Roman Empire",
-            "Watergate",
-            "Waterboarding at Guantánamo Bay",
-            "Pretending to care",
-            "Hot people",
-            "American Gladiators",
-            "Public ridicule",
-            "George Bush",
-            "Aubergine",
-            "Gerbil",
-            "Rabbits foot",
-            "My sex life",
-            "Mommy",
-            "Daddy",
-            "Peter Griffin",
-            "AXE Body Spray",
-            "Judge Judy",
-            "Stranger danger",
-            "The Blood of Christ",
-            "A Bop It",
-            "Horrifying laser hair removal accident",
-            "Charlie's Terraria addiction",
-            "Lip biting",
-            "Making car noises while pushing the shopping trolley around",
-            "New Age music",
-            "Commiting a hit and run",
-            "Drinking printer ink",
-            "Paint thinner",
-            "My vagina",
-            "Duran Duran",
-            "Josh Hutcherson",
-            "Racism",
-            "Women",
-            "Racially-biased SAT questions",
-            "Wiping her butt",
-            "Battling goblins",
-            "Pictures of boobs",
-            "A quick getaway",
-            "GTA 7",
-            "A poorly made cup of tea",
-            "The fabric of reality",
-            "Wheese Cheels",
-            "The War on Drugs",
-            "Plagerism",
-            "A nice holiday at Tiananmnen Square in 1989",
-            "Alcholism",
-            "A scarily accurate Lois Griffin impression",
-            "William Shatner's music career",
-            "Radiohead's performance at the MTV Beach House",
-            "Getting naked and watching Nickelodeon",
-            "Meth",
-            "The 2017 Las Vegas Shooting",
-            "A Yoko Ono concert",
-            "9/11",
-            "Laughing at the name Zedong",
-            "Mark David Chapman",
-            "Doing here comes the aeroplane on September 12th 2001",
-            "Stealing the glass from the pub",
-            "A jaunty tune",
-            "Dinner with Jay-Z",
-            "Stalking people",
-            "Columbine",
+            "Famine"
+            "Nicolas Cage"
+            "Not caring about the third world"
+            "Bannananana"
+            "Object permanence"
+            "A moment of silence"
+            "My Family"
+            "Cucumber"
+            "Robert J. Oppenheimer"
+            "Atomic War"
+            "Explosions"
+            "An M. Night Shyamalan plot twist"
+            "Grave robbing"
+            "A time travel paradox"
+            "Half-assed foreplay"
+            "42"
+            "Blue-eyes white dragon"
+            "Pot of Greed"
+            "The Bill of Independence"
+            "Kitchen Gun"
+            "Blade staring Wesley Snipes"
+            "Big Knobs and Broomsticks"
+            "Consultants"
+            "Her Royal Highness, Queen Elizabeth II"
+            "Forgetting the Alamo"
+            "Crippling debt"
+            "The Trail of Tears"
+            "Dinner with Jeffery Dahmer"
+            "Existential Dread"
+            "An Existential Crisis"
+            "Day drinking"
+            "Red Bull"
+            "A perfect Borat impression"
+            "Poor people"
+            "AIDS"
+            "The Fall of the Roman Empire"
+            "Watergate"
+            "Waterboarding at Guantánamo Bay"
+            "Pretending to care"
+            "Hot people"
+            "American Gladiators"
+            "Public ridicule"
+            "George Bush"
+            "Aubergine"
+            "Gerbil"
+            "Rabbits foot"
+            "My sex life"
+            "Mommy"
+            "Daddy"
+            "Peter Griffin"
+            "AXE Body Spray"
+            "Judge Judy"
+            "Stranger danger"
+            "The Blood of Christ"
+            "A Bop It"
+            "Horrifying laser hair removal accident"
+            "Charlie's Terraria addiction"
+            "Lip biting"
+            "Making car noises while pushing the shopping trolley around"
+            "New Wave music"
+            "Commiting a hit and run"
+            "Drinking printer ink"
+            "Paint thinner"
+            "My vagina"
+            "FREE SPACE INSERT FUNNY CARD HERE"
+            "Josh Hutcherson"
+            "Racism"
+            "Women"
+            "Racially-biased SAT questions"
+            "Wiping her butt"
+            "Battling goblins"
+            "Pictures of boobs"
+            "A quick getaway"
+            "A bad digital Cards Against Humanity knockoff"
+            "A poorly made cup of tea"
+            "The fabric of reality"
+            "The Taliban"
+            "The War on Drugs"
+            "Plagerism"
+            "A nice holiday at Tiananmnen Square in 1989"
+            "Alcholism"
+            "A scarily accurate Lois Griffin impression"
+            "William Shatner's music career"
+            "Radiohead's performance at the MTV Beach House"
+            "Getting naked and watching Nickelodeon"
+            "Meth"
+            "The 2017 Las Vegas Shooting"
+            "A Yoko Ono concert"
+            "9/11"
+            "Laughing at the name Zedong"
+            "Mark David Chapman"
+            "Doing here comes the aeroplane on September 12th 2001"
+            "Stealing the glass from the pub"
+            "A jaunty tune"
+            "Dinner with Jay-Z"
+            "Stalking people"
+            "Columbine"
