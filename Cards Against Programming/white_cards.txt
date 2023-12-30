@@ -1,6 +1,6 @@
             "Your mother"
             "Friendly Fire"
-            "Ronald Reagan",
+            "Ronald Reagan"
             "Famine"
             "Nicolas Cage"
             "Not caring about the third world"
