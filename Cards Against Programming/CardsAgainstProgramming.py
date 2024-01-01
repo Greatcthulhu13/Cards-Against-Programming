@@ -1,38 +1,42 @@
 import random
 
-# Function to read cards from a text file
-def read_cards(file_name):
-    with open(file_name, 'r', encoding='utf-8') as file:
-        cards = file.readlines()
-        cards = [card.strip() for card in cards]
-    return cards
-
-white_cards = read_cards('white_cards.txt')
-black_cards = read_cards('black_cards.txt')
-
 class CardsAgainstHumanity:
     def __init__(self):
         self.max_hand_size = 10
         self.min_players = 3
         self.max_rounds = 5
+        self.white_cards = self.read_cards('white_cards.txt')
+        self.black_cards = self.read_cards('black_cards.txt')
+
+    @staticmethod
+    def read_cards(file_name):
+        try:
+            with open(file_name, 'r', encoding='utf-8') as file:
+                return [card.strip() for card in file.readlines()]
+        except FileNotFoundError:
+            print(f"Error: File '{file_name}' not found.")
+            exit()
+        except Exception as e:
+            print(f"An unexpected error occurred while reading '{file_name}': {e}")
+            exit()
 
     def draw_black_card(self):
-        chosen_card = random.choice(black_cards)
-        black_cards.remove(chosen_card)
+        chosen_card = random.choice(self.black_cards)
+        self.black_cards.remove(chosen_card)
         return chosen_card
 
     def draw_white_cards(self, num_cards):
-        return random.sample(white_cards, num_cards)
+        return random.sample(self.white_cards, num_cards)
 
     def play_round(self):
         black_card = self.draw_black_card()
         num_answers_required = black_card.count("___")  # Count underscores to determine the number of answers required
         if num_answers_required == 0:
             num_answers_required = 1
-            showresponse = True 
+            show_response = True 
         else:
-            showresponse = False
-        black_card = black_card.replace('"','') #Removes the speech marks in the black card bcs I'm too lazy to do it myself
+            show_response = False
+        black_card = black_card.replace('"','')  # Removes the speech marks in the black card because I'm too lazy to do it myself
 
         print(f"\nBlack Card: {black_card}")
 
@@ -58,7 +62,7 @@ class CardsAgainstHumanity:
                     filled_black_card = filled_black_card.replace("___", response, 1)
                 else:
                     filled_black_card = filled_black_card.replace("____", response, 1)
-            if showresponse == False:
+            if show_response == False:
                 print(f"Player {player}'s response: {filled_black_card}")
                 print("=" * 30)
             else:
