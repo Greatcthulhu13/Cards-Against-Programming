@@ -1,16 +1,16 @@
-# Contributing to [Cards Against Programming]
+# Contributing to Cards Against Programming
 
-Thank you for considering contributing to [Cards Against Programming]! We appreciate your interest and support in making this project better. Please take a moment to review the following guidelines to ensure a smooth contribution process.
+Thank you for considering contributing to Cards Against Programming! We appreciate your interest and support in making this project better. Please take a moment to review the following guidelines to ensure a smooth contribution process.
 
 ## How Can I Contribute?
 
 ### Bug Reports
 
-If you encounter a bug while using [Cards Against Programming], please open a new issue in the issue tracker with a detailed description of the problem. Include steps to reproduce the bug if possible. Before submitting a new issue, please check if a similar issue has already been reported.
+If you encounter a bug while using Cards Against Programming, please open a new issue in the issue tracker with a detailed description of the problem. Include steps to reproduce the bug if possible. Before submitting a new issue, please check if a similar issue has already been reported.
 
 ### Feature Requests
 
-We welcome suggestions for new features or enhancements to [Cards Against Programming]. Please open a new issue in the issue tracker with a clear description of the proposed feature or enhancement. Explain why it would be valuable and any use cases that support it.
+We welcome suggestions for new features or enhancements to Cards Against Programming. Please open a new issue in the issue tracker with a clear description of the proposed feature or enhancement. Explain why it would be valuable and any use cases that support it.
 
 ### Pull Requests
 
@@ -25,14 +25,14 @@ When submitting a pull request, please adhere to the following guidelines:
 
 ## Code of Conduct
 
-Please note that [Cards Against Programming] has adopted a Code of Conduct. By participating in this project, you agree to abide by its terms. You can find the full Code of Conduct in the CODE_OF_CONDUCT.md file.
+Please note that Cards Against Programming has adopted a Code of Conduct. By participating in this project, you agree to abide by its terms. You can find the full Code of Conduct in the CODE_OF_CONDUCT.md file.
 
 ## License
 
-By contributing to [Cards Against Programming], you agree that your contributions will be licensed under the project's LICENSE file.
+By contributing to Cards Against Programming, you agree that your contributions will be licensed under the project's LICENSE file.
 
 ## Questions
 
-If you have any questions about contributing to [Cards Against Programming], feel free to reach out to either [Greatcthulhu13], [Toomuchsalt], [Sancross] or [Vixi].
+If you have any questions about contributing to Cards Against Programming, feel free to reach out to either Greatcthulhu13, Toomuchsalt, Sancross or Vixi.
 
-We appreciate your help in making [Cards Against Programming] better for everyone!
+We appreciate your help in making Cards Against Programming better for everyone!
