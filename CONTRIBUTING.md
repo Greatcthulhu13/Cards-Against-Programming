@@ -1,4 +1,4 @@
-# Contributing to [Project Name]
+# Contributing to [Cards Against Programming]
 
 Thank you for considering contributing to [Cards Against Programming]! We appreciate your interest and support in making this project better. Please take a moment to review the following guidelines to ensure a smooth contribution process.
 
