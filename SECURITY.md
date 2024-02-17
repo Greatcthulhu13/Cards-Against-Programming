@@ -13,8 +13,7 @@
 
 ## Reporting a Vulnerability
 
-At Cards Against Programming, we take security seriously. If you discover any security-related issues or vulnerabilities, please report them to us immediately 
-so we can address them promptly.
+If you discover any security-related issues or vulnerabilities, please report them to us immediately so we can address them promptly.
 
 # How to Report a Vulnerability
 
